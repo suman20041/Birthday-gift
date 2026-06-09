@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Happy Birthday 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <span class="orb orb-4"></span>
+    </div>
+
+    <div class="emoji-rain" aria-hidden="true">
+        <span class="fall-emoji" style="--left:4%;  --dur:9s;  --delay:0s">🎂</span>
+        <span class="fall-emoji" style="--left:12%; --dur:11s; --delay:1.5s">🎉</span>
+        <span class="fall-emoji" style="--left:20%; --dur:8s;  --delay:3s">✨</span>
+        <span class="fall-emoji" style="--left:28%; --dur:10s; --delay:0.6s">🎈</span>
+        <span class="fall-emoji" style="--left:36%; --dur:12s; --delay:2.2s">🎁</span>
+        <span class="fall-emoji" style="--left:44%; --dur:9s;  --delay:4s">⭐</span>
+        <span class="fall-emoji" style="--left:52%; --dur:11s; --delay:1s">🎊</span>
+        <span class="fall-emoji" style="--left:60%; --dur:8s;  --delay:5s">🧁</span>
+        <span class="fall-emoji" style="--left:68%; --dur:10s; --delay:2.8s">💫</span>
+        <span class="fall-emoji" style="--left:76%; --dur:12s; --delay:0.3s">🎂</span>
+        <span class="fall-emoji" style="--left:84%; --dur:9s;  --delay:3.5s">🎉</span>
+        <span class="fall-emoji" style="--left:92%; --dur:11s; --delay:1.8s">✨</span>
+        <span class="fall-emoji" style="--left:8%;  --dur:10s; --delay:6s">🎈</span>
+        <span class="fall-emoji" style="--left:24%; --dur:8s;  --delay:4.5s">🎁</span>
+        <span class="fall-emoji" style="--left:40%; --dur:11s; --delay:5.5s">⭐</span>
+        <span class="fall-emoji" style="--left:56%; --dur:9s;  --delay:7s">🎊</span>
+        <span class="fall-emoji" style="--left:72%; --dur:12s; --delay:2s">🧁</span>
+        <span class="fall-emoji" style="--left:88%; --dur:10s; --delay:6.5s">💫</span>
+    </div>
+
+    <div class="page-layout">
+        <main class="container">
+
+            <div class="photo-section">
+                <div class="balloon-cluster" aria-hidden="true">
+                    <div class="balloon balloon-red">
+                        <span class="balloon-head"></span>
+                        <span class="balloon-knot"></span>
+                        <span class="balloon-string"></span>
+                    </div>
+                    <div class="balloon balloon-gold">
+                        <span class="balloon-head"></span>
+                        <span class="balloon-knot"></span>
+                        <span class="balloon-string"></span>
+                    </div>
+                    <div class="balloon balloon-plum">
+                        <span class="balloon-head"></span>
+                        <span class="balloon-knot"></span>
+                        <span class="balloon-string"></span>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="photo-glow"></div>
+                    <img src="myfriend.jpeg" alt="Birthday Person" class="profile-img">
+                </div>
+            </div>
+
+            <h1>🎉 Happy Birthday! 🎉</h1>
+            <h2 id="person-name">Lembu</h2>
+            <div class="divider"></div>
+
+            <p class="message">
+                Wishing you a day filled with happiness, laughter,
+                love, and unforgettable memories.
+                May all your dreams come true and your year ahead
+                be full of success and joy! 🎂✨
+            </p>
+
+            <button id="celebrateBtn">🎊 Celebrate!</button>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
